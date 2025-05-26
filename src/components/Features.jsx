@@ -1,13 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Computer from "../assets/img/education/education-1.webp";
+import Bachelor from "../assets/img/education/education-3.webp";
+import Medical from "../assets/img/education/education-5.webp";
+import Environmental from "../assets/img/education/education-7.webp";
+import Mechanical from "../assets/img/education/education-9.webp";
+import Data from "../assets/img/education/education-2.webp";
 
 const FeaturedPrograms = () => {
   const programs = [
     {
       filter: 'filter-bachelor',
       degree: "Bachelor's Degree",
-      image: 'src/assets/img/education/education-1.webp',
+      image: Computer,
       title: 'Computer Science',
       duration: '4 Years',
       credits: '120 Credits',
@@ -19,7 +25,7 @@ const FeaturedPrograms = () => {
     {
       filter: 'filter-bachelor',
       degree: "Bachelor's Degree",
-      image: 'src/assets/img/education/education-3.webp',
+      image: Bachelor,
       title: 'Business Administration',
       duration: '3 Years',
       credits: '90 Credits',
@@ -31,7 +37,7 @@ const FeaturedPrograms = () => {
     {
       filter: 'filter-bachelor',
       degree: "Bachelor's Degree",
-      image: 'src/assets/img/education/education-5.webp',
+      image: Medical,
       title: 'Medical Sciences',
       duration: '5 Years',
       credits: '150 Credits',
@@ -43,7 +49,7 @@ const FeaturedPrograms = () => {
     {
       filter: 'filter-master',
       degree: "Master's Degree",
-      image: 'src/assets/img/education/education-7.webp',
+      image: Environmental,
       title: 'Environmental Studies',
       duration: '2 Years',
       credits: '60 Credits',
@@ -55,7 +61,7 @@ const FeaturedPrograms = () => {
     {
       filter: 'filter-master',
       degree: "Master's Degree",
-      image: 'src/assets/img/education/education-9.webp',
+      image: Mechanical,
       title: 'Mechanical Engineering',
       duration: '2 Years',
       credits: '64 Credits',
@@ -67,7 +73,7 @@ const FeaturedPrograms = () => {
     {
       filter: 'filter-certificate',
       degree: 'Certificate',
-      image: 'src/assets/img/education/education-2.webp',
+      image: Data,
       title: 'Data Science',
       duration: '6 Months',
       credits: '24 Credits',

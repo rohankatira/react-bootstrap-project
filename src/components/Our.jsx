@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PureCounter from "@srexi/purecounterjs";
+import signature from "../assets/img/misc/signature-1.webp"
+import campus from "../assets/img/education/campus-4.webp"
+import student from "../assets/img/education/students-2.webp"
 
 const AboutSection = () => {
   useEffect(() => {
@@ -60,7 +63,7 @@ const AboutSection = () => {
             </div>
             <div className="d-flex align-items-center mt-4 signature-block">
               <img
-                src="src/assets/img/misc/signature-1.webp"
+                src={signature}
                 alt="Principal's Signature"
                 width="120"
               />
@@ -79,7 +82,7 @@ const AboutSection = () => {
                 data-aos-delay="400"
               >
                 <img
-                  src="src/assets/img/education/campus-4.webp"
+                  src={campus}
                   alt="Campus Life"
                   className="img-fluid rounded-4 shadow-lg"
                 />
@@ -90,7 +93,7 @@ const AboutSection = () => {
                 data-aos-delay="500"
               >
                 <img
-                  src="src/assets/img/education/students-2.webp"
+                  src={student}
                   alt="Students"
                   className="img-fluid rounded-4 shadow-lg"
                 />

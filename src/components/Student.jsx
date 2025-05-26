@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Import image
+import StudentsLifeImg from '../assets/img/education/education-square-11.webp';
+
 const StudentsLifeBlock = () => {
   return (
     <section id="students-life-block" className="students-life-block section">
@@ -13,12 +16,12 @@ const StudentsLifeBlock = () => {
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="row align-items-center gy-4">
-          
+
           {/* Image Block */}
           <div className="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div className="students-life-img position-relative">
               <img
-                src="src/assets/img/education/education-square-11.webp"
+                src={StudentsLifeImg}
                 className="img-fluid rounded-4 shadow-sm"
                 alt="Students Life"
               />
@@ -35,7 +38,7 @@ const StudentsLifeBlock = () => {
           <div className="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div className="students-life-content">
               <div className="row g-4 mb-4">
-                
+
                 <div className="col-md-6" data-aos="zoom-in" data-aos-delay="200">
                   <div className="student-activity-item">
                     <div className="icon-box">
