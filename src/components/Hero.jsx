@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import HeroVideo from '../assets/img/education/video-2.mp4'
 const Hero = () => {
   return (
     <section id="hero" className="hero section dark-background">
       <div className="hero-container">
         <video autoPlay muted loop playsInline className="video-background">
-          <source src="src/assets/img/education/video-2.mp4" type="video/mp4" />
+          <source src={HeroVideo} type="video/mp4" />
         </video>
         <div className="overlay"></div>
         <div className="container">
