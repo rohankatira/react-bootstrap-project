@@ -1,13 +1,12 @@
 import React from 'react';
-import './style.css'; 
-   
-
+import { Link } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 const Hero = () => {
   return (
     <section id="hero" className="hero section dark-background">
       <div className="hero-container">
         <video autoPlay muted loop playsInline className="video-background">
-          <source src="assets/img/education/video-2.mp4" type="video/mp4" />
+          <source src="src/assets/img/education/video-2.mp4" type="video/mp4" />
         </video>
         <div className="overlay"></div>
         <div className="container">
@@ -17,8 +16,8 @@ const Hero = () => {
                 <h1>Empowering Futures Through Education</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam ornare, imperdiet est eget, pretium augue. Nullam auctor felis in nibh gravida, eu viverra risus egestas.</p>
                 <div className="cta-buttons">
-                  <a href="#" className="btn-primary">Start Your Journey</a>
-                  <a href="#" className="btn-secondary">Discover Programs</a>
+                  <Link to="#" className="btn-primary">Start Your Journey</Link>
+                  <Link to="#" className="btn btn-dark">Discover Programs</Link>
                 </div>
               </div>
             </div>
@@ -78,17 +77,17 @@ const Hero = () => {
             <div className="col-md-6 col-xl-4 col-12 ticker-item">
               <span className="date">NOV 15</span>
               <span className="title">Open House Day</span>
-              <a href="#" className="btn-register">Register</a>
+              <Link to="#" className="btn-register text-decoration-none">Register</Link>
             </div>
             <div className="col-md-6 col-12 col-xl-4 ticker-item">
               <span className="date">DEC 5</span>
               <span className="title">Application Workshop</span>
-              <a href="#" className="btn-register">Register</a>
+              <Link to="#" className="btn-register text-decoration-none">Register</Link>
             </div>
             <div className="col-md-6 col-12 col-xl-4 ticker-item">
               <span className="date">JAN 10</span>
               <span className="title">International Student Orientation</span>
-              <a href="#" className="btn-register">Register</a>
+              <Link to="#" className="btn-register text-decoration-none">Register</Link>
             </div>
           </div>
         </div>
@@ -98,4 +97,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
